@@ -1,0 +1,39 @@
+# split into 2 dataframes
+df10 = gundata_df.query('year == 2010')
+df16 = gundata_df.query('year == 2016')
+
+# sort df16 by diff descending to see largest change
+sort_df16 = df16.nlargest(10,'diff')
+sort_df16
+
+# sort df16, df10 by totals for pie charts
+df10_pie = df10.nlargest(10,'totals')
+df16_pie = df16.nlargest(10,'totals')
+
+# create pie charts for 2010
+labels10 = list(df10_pie.state)
+data10 = df10_pie['totals']
+plt.pie(data10, labels=labels10);
+
+# create pie chart for 2016 totals
+labels16 = list(df16_pie.state)
+data16 = df16_pie['totals']
+plt.pie(data16, labels=labels16);
+
+Kentucky
+California
+Florida
+Illinois
+Texas
+
+###############################################################
+
+- The notes from the GitHub page about the data (https://github.com/BuzzFeedNews/nics-firearm-background-checks/blob/master/README.md) offer the following caveats
+
+- An increase in background check requests may signify an increase in gun purchases, but it's not a direct correlation. The laws in each state vary in terms of when checks are required to be submitted and resubmitted and how often. Therefore, while an increase in background checks may indicate more gun purchases in total, it also may indicate stricter regulations (for example, Kentucky runs a check every month for each concealed carry permit holder).
+
+- Between 2016 and 2010, Kentucky had a 54% increase in background checks for guns. As previously mentioned, this is due to their policy of running monthly checks for those with concealed carry permits.
+
+- Again, Kentucky appears to be an outlier in this dataset as a result of their policy to run monthly background checks, especially on those with concealed carry permits.
+
+- Other than a few outliers, it appears that there is a weak correlation between population per square mile and total gun permits issued. This would make sense as people who live in more sparsely populated areas often need guns for hunting, protecting livestock, and personal safety (in absence of a robust law enforcement presence).
