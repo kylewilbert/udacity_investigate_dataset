@@ -1,0 +1,16 @@
+References
+Pandas documentation
+http://pandas.pydata.org/pandas-docs/stable/timeseries.html
+https://pandas.pydata.org/pandas-docs/stable/generated/pandas.to_datetime.html
+
+Stack Overflow
+https://stackoverflow.com/questions/13148429/how-to-change-the-order-of-dataframe-columns
+https://stackoverflow.com/questions/31663426/python-pandas-drop-rows-from-data-frame-on-string-match-from-list
+https://stackoverflow.com/questions/17071871/select-rows-from-a-dataframe-based-on-values-in-a-column-in-pandas?rq=1
+https://stackoverflow.com/questions/13611065/efficient-way-to-apply-multiple-filters-to-pandas-dataframe-or-series
+https://stackoverflow.com/questions/13851535/how-to-delete-rows-from-a-pandas-dataframe-based-on-a-conditional-expression
+https://stackoverflow.com/questions/12096252/use-a-list-of-values-to-select-rows-from-a-pandas-dataframe
+https://stackoverflow.com/questions/12065885/filter-dataframe-rows-if-value-in-column-is-in-a-set-list-of-values
+https://stackoverflow.com/questions/17134716/convert-dataframe-column-type-from-string-to-datetime
+https://stackoverflow.com/questions/20625582/how-to-deal-with-settingwithcopywarning-in-pandas
+
